@@ -1,0 +1,26 @@
+plugins {
+    id 'java'
+}
+
+repositories {
+    mavenCentral()
+}
+test {
+    // Enable JUnit 5:
+    useJUnitPlatform()
+}
+group = 'practice.dojo'
+description = 'Practice Algorithms'
+
+wrapper {
+    gradleVersion = '4.8'
+    distributionType = Wrapper.DistributionType.ALL
+}
+
+
+dependencies {
+    compileOnly group: 'org.apiguardian', name: 'apiguardian-api', version: '1.0.0'
+    testCompile group: 'org.junit.jupiter', name: 'junit-jupiter-api', version: '5.3.0'
+    testCompile group: 'org.junit.jupiter', name: 'junit-jupiter-params', version: '5.3.0'
+    testRuntime group: 'org.junit.jupiter', name: 'junit-jupiter-engine', version: '5.3.0'
+}
