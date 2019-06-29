@@ -43,4 +43,14 @@ class Developers2Test {
         1
     ));
   }
+
+  @Test
+  public void shouldMaxContributions3() {
+    Developers2 developers = new Developers2();
+    assertEquals(235, developers.maxContributions(
+        new int[] {108, 107, 10, 5},
+        new int[] {110, 108, 13, 5},
+        2
+    ));
+  }
 }
