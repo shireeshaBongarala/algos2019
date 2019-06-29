@@ -1,6 +1,7 @@
 package practice.dojo.graphs;
 
 import java.util.Arrays;
+import java.util.Comparator;
 
 public class UnionFind {
 
