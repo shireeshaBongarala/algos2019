@@ -2,6 +2,7 @@ package practice.dojo.graphs;
 
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 import java.util.Queue;
@@ -61,7 +62,7 @@ public class FindNearestClone {
     }
 
     for(int i =0; i< nodesOfColor.size() -1; i++) {
-
+        searchForFirstClone(nodesOfColor.get(i));
     }
 
 
@@ -71,7 +72,8 @@ public class FindNearestClone {
 
   private int searchForFirstClone(Node fromNode) {
     //Do BFS
-    Queue<Node> node;
+    Queue<Node> queue = new LinkedList<>();
+    ((LinkedList<Node>) queue).offerFirst(fromNode);
 
 
     return 0;
