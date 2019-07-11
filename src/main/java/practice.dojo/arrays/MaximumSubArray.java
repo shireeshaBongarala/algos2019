@@ -1,8 +1,5 @@
 package practice.dojo.arrays;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class MaximumSubArray {
 
   public static void main(String[] args) {
